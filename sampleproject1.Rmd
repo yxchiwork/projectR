@@ -97,7 +97,7 @@ hour_span %>% summarise(
 
 We would like to find out the weather condition in which most accidents occur. Our hypotheses is that more accidents are likely to happen when the weather condition is bad.
 
-```{r test, output.lines=1:15}
+```{r}
 # Methods used in this research
 # group by col, and count the frequency of number of weather conditions
 WeatherAcc_Count <- data.frame(table(US_accidents$Weather_Condition))
@@ -105,16 +105,6 @@ top_n(WeatherAcc_Count[order(WeatherAcc_Count$Freq, decreasing = TRUE),],10)
 # WeatherAcc_Count[order(WeatherAcc_Count$Freq, decreasing = TRUE),]
 
 ```
-We used bar graph to analyze this time zone data. 
-
-```{r}
-ggplot(data = US_accidents) + 
-  geom_bar(mapping = aes(x = Timezone))
-```
 
 ## Conclusion 
-After analysis we found that our assumption were correct. Eastern time zone has the highest number of accident on record followed by Pacific standard time zone. This makes sense because these two regions are densely populated leading to more accidents.
-We were surprised to see that most accidents occurred when the weather was either fair or clear. After analyzing we can conclude that people are more attentive while driving when the weather condition is bad and they are less attentive when the weather condition is normal.
-We would like to find out which timezone has the highest accident recorded. Our assumption is that Eastern or Pacific time zone will have the highest number of accidents.
-We were able to find most of the research questions. But we would like to explore more in details about the dataset in part 2 of the project.
-We like how the knitting the R markdown file makes the whole project and data output look much nicer and easier to understand. We had to do some data cleaning and modeling to make our dataset usable. 
+

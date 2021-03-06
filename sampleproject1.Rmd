@@ -22,7 +22,6 @@ knitr::opts_chunk$set(
   message= FALSE)
 ```
 
-
 ```{r, include=FALSE}
 # load libs 
 packages <- c("tidyverse", "dplyr", "lubridate")
@@ -37,14 +36,6 @@ US_accidents <- read_csv("data/US_accidents.csv",
         Weather_Timestamp = col_datetime(format = "%m/%d/%Y %H:%M")))
 
 ```
-
-## Group Information
-Group Name: Group C
-Group Members: 
-Chandrark Thaker
-Raj Kumar
-Richa Patel
-Yuxiang Chi
 
 ## Dataset description
 This is a countrywide car accident dataset, which covers 49 states of the USA. The accident data are collected from February 2016 to Dec 2020, there are about 4.2 million accident records in this dataset.

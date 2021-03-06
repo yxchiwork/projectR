@@ -45,33 +45,8 @@ We are using this dataset to analyze the accidents happened in US and what facto
 ## Column description
 | Column Name    | Description |
 | ----------- | ----------- |
-| Severity   		|Shows the severity of the accident |
-| Start_Time (dttm) | starts a time of the accident in the local time zone. |
-| End_Time (dttm) 	| end time of the accident in local time zone.|
-Distance(mi) (dbl)	| The length of the road extent affected by the accident. |
-| Description (string ) 	| gives the information about the accident.|
-| Street (string ) 		| shows the street name in the address record. |
-| City (string ) 	 	| shows the city name in the address record. |
-| County (string )		| shows the county name in the address record.
-| State	(string )		| shows the state name in the address record. |
-| Zipcode  (int)		| shows the zip code in the address record. |
-| Timezone (string )	| shows the time zone depending on the accident location (eastern, central, pacific, etc.) |
-| Weather_Timestamp (DateTime)  | Shows the time-stamp of the weather | observation record (in local time). |
-| Temperature(F) 	 (int)	| Shows the temperature (in Fahrenheit). |
-| Wind_Chill(F)  (int)	| Shows the wind chill (in Fahrenheit). |
-| Humidity(%)  (int)	| Shows the humidity (in percentage). |
-| Pressure(in) (int)	| Shows the air pressure (in inches). |
-| Visibility(mi)  (int)	| Shows visibility (in miles). |
-| Wind_Direction  (string )  | Shows wind direction.(sw: south-west, ssw:  south-south-west, wsw: west-south-west, etc.) |
-| Wind_Speed(mph) (int) 	|Shows wind speed (in miles per hour). |
-| Weather_Condition(string )  | Shows the weather condition (rain, snow, thunderstorm, fog, etc.) |
-| Bump 	  (bool)  	| shows the accident happen location nearby the speed bump.	|
-| Crossing   (bool) 	|shows the accident happen location nearby the crossing area. |
-| Precipitation(in) | This column is about the precipitation for the raining.|
-| Junction  (bool) 		|shows the accident happen location nearby the junction. |	
-| No_Exit   (bool) 		|shows the accident happen location nearby the highway exit.	|
-| Traffic_Signal (bool) 	| shows the accident happen location nearby the traffic signal.	|
-| Sunrise_Sunset(string) | Shows the period of day (i.e. day or night) based on sunrise/sunset. | 
+| Col1 | Demo |
+
 
 ## Story line
 first, i would like to understand if the accident is more likely to happen in weekdays or weekends. so create a new column day of week based on accident start time and count the accident by day of week. we plot the number of accident by day of week in a bar chart and it shows daily accidents in weekdays is almost tripped than weekends.

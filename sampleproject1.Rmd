@@ -1,11 +1,11 @@
 ---
-title: "Group C Project"
+title: "Sample project 1"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   word_document:
     toc: yes
   html_document:
-    author: "Yuxiang Chi, Raj Kumar, Chandrark Thaker, Richa Patel"
+    author: "Yuxiang Chi"
     theme: flatly
     toc: yes
     toc_float: yes
